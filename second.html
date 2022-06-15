@@ -13,7 +13,8 @@
 	<a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
 		<a-assets>
-			<!-- <img id="drums" src="./assets/drums.png"> -->
+			<img id="bass" src="./assets/BASS.png">
+			<img id="drums" src="./assets/drums.png">
 			<img id="guitar" src="./assets/guitar.png">
 			<img id="mic" src="./assets/mic.png">
 			<img id="piano" src="./assets/piano.png">
@@ -21,7 +22,7 @@
 		</a-assets>
 
 		<a-marker class="ar-marker" id="drums-marker" type='barcode' value='0'>
-			<a-image src="#flute" rotation="90 0 0"></a-image>
+			<a-image src="#bass" rotation="90 0 0"></a-image>
 		</a-marker>
 		<a-marker class="ar-marker" id="guitar-marker" type='barcode' value='1'>
 			<a-image src="#guitar" rotation="90 0 0"></a-image>
@@ -39,16 +40,16 @@
 
 	<script>
 		var drums = new Howl({
-			src: ['./audio/DESFLUTE.mp3']
+			src: ['./audio/Imagine DragonsDrum.mp3']
 		});
 		var guitar = new Howl({
-			src: ['./audio/DESGUITAR.mp3']
+			src: ['./audio/Imagine DragonsGuitar.mp3']
 		});
 		var mic = new Howl({
-			src: ['./audio/DESMIC.mp3']
+			src: ['./audio/Imagine DragonsMic.mp3']
 		});
 		var piano = new Howl({
-			src: ['./audio/DESPIANO.mp3']
+			src: ['./audio/Imagine DragonsBass.mp3']
 		});
 
 		drums.play();
